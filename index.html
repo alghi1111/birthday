@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>To the Prettiest Girl</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500&family=Jost:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="ambient-petals" id="ambientPetals" aria-hidden="true"></div>
+
+
+<audio id="bgAudio" src="music/song.mp3" loop preload="auto"></audio>
+<div class="player" id="player">
+  <div class="player__art-wrap">
+    <img class="player__art" id="playerArt" src="image/cover.jpg" alt="Song cover">
+  </div>
+  <div class="player__meta">
+    <p class="player__title" id="playerTitle">ur fav song</p>
+    <p class="player__artist" id="playerArtist">for you</p>
+    <div class="player__bar">
+      <div class="player__bar-fill" id="playerBarFill"></div>
+    </div>
+  </div>
+  <button class="player__btn" id="playerBtn" aria-label="Play or pause song">
+    <svg id="iconPlay" viewBox="0 0 24 24" width="16" height="16"><path d="M8 5v14l11-7z" fill="currentColor"/></svg>
+    <svg id="iconPause" viewBox="0 0 24 24" width="16" height="16" style="display:none"><path d="M6 5h4v14H6zM14 5h4v14h-4z" fill="currentColor"/></svg>
+  </button>
+</div>
+
+<!-- ============ HERO / GIFT BOX ============ -->
+<section class="hero" id="hero">
+  <div class="hero__glow"></div>
+  <div class="hero__stars" aria-hidden="true"></div>
+
+  <p class="hero__eyebrow">a little something for</p>
+  <h1 class="hero__name" id="heroName">Name</h1>
+  <p class="hero__hint">tap the box to open your gift</p>
+
+  <button class="giftbox" id="giftbox" aria-label="Open your gift">
+    <div class="giftbox__lid">
+      <div class="giftbox__ribbon-h"></div>
+      <div class="giftbox__bow">
+        <span></span><span></span><i></i>
+      </div>
+    </div>
+    <div class="giftbox__base">
+      <div class="giftbox__ribbon-v"></div>
+      <div class="giftbox__shine"></div>
+    </div>
+    <div class="giftbox__glow"></div>
+  </button>
+
+  <p class="hero__scroll-note" id="scrollNote">&#9660; scroll down after opening</p>
+</section>
+
+<!-- ============ FLOWER BURST / TRANSITION OVERLAY ============ -->
+<div class="bloom-overlay" id="bloomOverlay" aria-hidden="true">
+  <div class="bloom-overlay__wash"></div>
+  <div class="bloom-overlay__flowers" id="bloomFlowers"></div>
+</div>
+
+<!-- ============ MAIN CONTENT ============ -->
+<main class="content" id="mainContent">
+
+  <!-- 1. To the prettiest girl -->
+  <section class="section section--intro" id="s1">
+    <div class="ornament">&#10084;</div>
+    <p class="section__eyebrow">to the prettiest girl,</p>
+    <h2 class="section__name" id="introName">Name</h2>
+    <p class="section__sub">every love story is beautiful, but ours is my favorite.</p>
+  </section>
+
+  <!-- 2. Time counter -->
+  <section class="section section--timer" id="s2">
+    <p class="section__eyebrow">you have existed on this earth for</p>
+    <h2 class="section__title">every second, a gift</h2>
+    <p class="timer__since">since July 15, 2008</p>
+    <div class="timer" id="timer">
+      <div class="timer__unit"><span class="timer__num" id="tYears">00</span><span class="timer__label">years</span></div>
+      <div class="timer__unit"><span class="timer__num" id="tMonths">00</span><span class="timer__label">months</span></div>
+      <div class="timer__unit"><span class="timer__num" id="tDays">00</span><span class="timer__label">days</span></div>
+      <div class="timer__unit"><span class="timer__num" id="tHours">00</span><span class="timer__label">hours</span></div>
+      <div class="timer__unit"><span class="timer__num" id="tMinutes">00</span><span class="timer__label">minutes</span></div>
+      <div class="timer__unit"><span class="timer__num" id="tSeconds">00</span><span class="timer__label">seconds</span></div>
+    </div>
+    <p class="timer__foot">and the world has been so much prettier for it.</p>
+  </section>
+
+  <!-- 3. Long text section (lorem placeholder) -->
+  <section class="section section--letter" id="s3">
+    <p class="section__eyebrow">a letter, of sorts</p>
+    <h2 class="section__title">what i never say out loud</h2>
+    <div class="letter">
+      <p>happy eighteenth birthday sayangggkuu akuu do'ain kamuu selaluu dii berii umur panjang, sehat selalu, semua yangg kamuu inginkan tercapai yaa sayanggkuu, dan pastinyaa makinn cantikk princess kuu😘, dan akuu mauu bilang ke kamuu sayangg I'm so lucky to have you babeee, makasii udaa mau nerima akuu apa adanya sayangg,semoga hubungan kitaa langgeng terus yaa sayangg, udah sii akuu gatau mau bilang apa lagii sayangg intinya banyaak yang masii akuu mauu bilang sayangg tapii nanti kepanjang pulaa lopeee youuu sekebon sayaangkuuu🤍</p>
+    </div>
+  </section>
+
+  <!-- 4. Things I love about you -->
+  <section class="section section--traits" id="s4">
+    <p class="section__eyebrow">not moments, just you</p>
+    <h2 class="section__title">things i love about you</h2>
+    <div class="traits">
+      <div class="trait-card">
+        <span class="trait-card__mark">&#10022;</span>
+        <h3>your kindness</h3>
+        <p>the way you make everyone around you feel seen and safe, without even trying.</p>
+      </div>
+      <div class="trait-card">
+        <span class="trait-card__mark">&#10022;</span>
+        <h3>your warmth</h3>
+        <p>a softness in how you speak, like every word is wrapped in care.</p>
+      </div>
+      <div class="trait-card">
+        <span class="trait-card__mark">&#10022;</span>
+        <h3>your strength</h3>
+        <p>how quietly you carry hard things, and still choose gentleness.</p>
+      </div>
+      <div class="trait-card">
+        <span class="trait-card__mark">&#10022;</span>
+        <h3>your curiosity</h3>
+        <p>the way you get exicted over the smallest, most ordinary things.</p>
+      </div>
+      <div class="trait-card">
+        <span class="trait-card__mark">&#10022;</span>
+        <h3>your honesty</h3>
+        <p>you say what you mean, and mean it with your whole heart.</p>
+      </div>
+      <div class="trait-card">
+        <span class="trait-card__mark">&#10022;</span>
+        <h3>your grace</h3>
+        <p>how you handle chaos like it's nothing, calm in every storm.</p>
+      </div>
+      <div class="trait-card">
+        <span class="trait-card__mark">&#10022;</span>
+        <h3>your humor</h3>
+        <p>how you always know how to make me smile, even from miles away</p>
+      </div>
+      <div class="trait-card">
+        <span class="trait-card__mark">&#10022;</span>
+        <h3>your heart</h3>
+        <p>endlessly generous, endlessly patient, endlessly you.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. My prettiest princess (photo grid) -->
+  <section class="section section--gallery" id="s5">
+    <p class="section__eyebrow">a little gallery</p>
+    <h2 class="section__title">my prettiest princess</h2>
+    <div class="gallery">
+      <div class="gallery__item"><img src="image/photo1.jpeg" alt="Her photo 1" loading="lazy"></div>
+      <div class="gallery__item"><img src="image/photo2.jpeg" alt="Her photo 2" loading="lazy"></div>
+      <div class="gallery__item"><img src="image/photo3.jpeg" alt="Her photo 3" loading="lazy"></div>
+      <div class="gallery__item"><img src="image/photo4.jpeg" alt="Her photo 4" loading="lazy"></div>
+      <div class="gallery__item"><img src="image/photo5.jpeg" alt="Her photo 5" loading="lazy"></div>
+      <div class="gallery__item"><img src="image/photo6.jpeg" alt="Her photo 6" loading="lazy"></div>
+      <div class="gallery__item"><img src="image/photo7.jpeg" alt="Her photo 7" loading="lazy"></div>
+      <div class="gallery__item"><img src="image/photo8.jpeg" alt="Her photo 8" loading="lazy"></div>
+    </div>
+  </section>
+
+  <!-- 6. Text of hope -->
+  <section class="section section--hope" id="s6">
+    <div class="ornament">&#10022;</div>
+    <p class="section__eyebrow">and so, my hope for you</p>
+    <h2 class="section__title">may this new year be gentle</h2>
+    <div class="hope">
+      <p>sekali lagi, happy birthday yaa sayangg 🤍
+
+akuu harap di umur kamuu yang sekarang, kamuu lebih banyak dapet hari-hari yang tenang, pagi yang enak dijalanin, sama malem yang bikin kamuu bisa istirahat tanpa kepikiran banyak hal. semoga kamuu terus ngejar hal-hal yang bikin kamuu seneng dan bikin mata kamuu berbinar, dan semoga pelan-pelan kamuu bisa ninggalin hal-hal yang cuma bikin capek hati tanpa ngasih kebahagiaan balik.</p>
+      <p>kalau nanti ada hari yang berat, akuu harap kamuu selalu inget kalau kamuu disayang banget. bukan karena apa yang kamuu lakuin, tapi karena kamuu emang kamuu. jangan terlalu keras sama diri sendiri yaa, akuu bakal selalu ada nemenin kamuu sebisa akuu.
+
+makasii yaa udah hadir di hidup akuu, makasii juga karena udah selalu jadi tempat yang paling nyaman buat akuu. akuu bersyukur banget bisa punya kamuu. selamat ulang tahun yaa cantikkuu, semoga tahun ini jadi tahun yang baik buat kamuu, semua doa dan harapan kamuu pelan-pelan tercapai. i love youu, my prettiest girl 🤍</p>
+      <p class="hope__wish">happy birthday once again yaa, dari siler yang ganteng </p>
+    </div>
+    <div class="hope__signoff">with all my love</div>
+  </section>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
